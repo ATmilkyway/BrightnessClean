@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
@@ -40,10 +41,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${beVietnam.className} h-full antialiased`}>
+    <html lang="en" className={`${beVietnam.className} h-full antialiased`} suppressHydrationWarning >
       <body className="min-h-full flex flex-col">
-        <NavBar />
-        <main>{children}</main>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <NavBar />
+          <main>{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );
