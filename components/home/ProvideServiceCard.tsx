@@ -38,9 +38,7 @@ const ProvideServiceCard = ({
       <CardHeader>
         <CardAction></CardAction>
 
-        <CardTitle className="text-[#111D15] text-2xl">
-          {title}
-        </CardTitle>
+        <CardTitle className="text-[#111D15] text-2xl">{title}</CardTitle>
 
         <CardDescription className="text-[#666666] text-base leading-relaxed ">
           {description}
@@ -53,7 +51,7 @@ const ProvideServiceCard = ({
           className={`flex items-center gap-2 px-8 py-3 rounded transition hover:shadow-md ${
             variant === "fill"
               ? "bg-[#22B37E] text-white hover:bg-[#22b37ee0]"
-              : "bg-white border border-[#666666] text-[#666666] hover:bg-[#22b37ee0] hover:text-white"
+              : "bg-white border border-[#666666] text-[#666666] hover:bg-[#22B37EE0] hover:text-white hover:border-transparent"
           }`}
         >
           Book Now <ArrowUpRight />
