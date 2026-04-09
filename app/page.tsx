@@ -5,6 +5,7 @@ import HighQualitySection from "@/components/home/HighQualitySection";
 import PreCleaningSection from "@/components/home/PreCleaningSection";
 import PriceSection from "@/components/home/PriceSection";
 import ProvideService from "@/components/home/ProvideService";
+import StayUpdateSection from "@/components/home/StayUpdateSection";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <PreCleaningSection />
       <PriceSection />
       <FeedBackSection />
+      <StayUpdateSection />
     </div>
   );
 };

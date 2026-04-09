@@ -8,18 +8,21 @@ import team3 from "@/public/team3.jpg";
 
 const teamMembers = [
   {
+    id:1,
     title: "Emily Johnson",
     description:
       "She is an expert cleaning staff member who provides thorough cleaning with precision.",
     image: team1,
   },
   {
+    id:2,
     title: "Andrew Wilson",
     description:
       "He is an expert cleaning staff member who provides thorough cleaning with precision.",
     image: team2,
   },
   {
+    id:3,
     title: "Olivia Martin",
     description:
       "She is an expert cleaning staff member who provides thorough cleaning with precision.",
