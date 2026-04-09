@@ -41,7 +41,7 @@ const pricingPlans = [
 
 const PriceSection = () => {
   return (
-    <div className="relative h-[80vh] flex justify-center">
+    <div className="relative h-[80vh] flex justify-center mb-72">
       {/* Background */}
       <div className="absolute inset-0">
         <Image src={priceBg} alt="Hero Image" className="object-cover" fill />

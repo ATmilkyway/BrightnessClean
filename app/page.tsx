@@ -1,4 +1,5 @@
 import EffectiveCleaning from "@/components/home/EffectiveCleaning";
+import FeedBackSection from "@/components/home/FeedBackSection";
 import HeroSection from "@/components/home/HeroSection";
 import HighQualitySection from "@/components/home/HighQualitySection";
 import PreCleaningSection from "@/components/home/PreCleaningSection";
@@ -14,6 +15,7 @@ const HomePage = () => {
       <EffectiveCleaning />
       <PreCleaningSection />
       <PriceSection />
+      <FeedBackSection />
     </div>
   );
 };
