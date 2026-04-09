@@ -46,16 +46,16 @@ const ProvideServiceCard = ({
       </CardHeader>
 
       <CardFooter className="bg-white border-0">
-        <Link
-          href={href}
-          className={`flex items-center gap-2 px-8 py-3 rounded transition hover:shadow-md  text-base font-medium ${
-            variant === "fill"
-              ? "bg-[#22B37E] text-white hover:bg-[#22b37ee0]"
-              : "bg-white border border-[#666666] text-[#666666] hover:bg-[#22B37EE0] hover:text-white hover:border-transparent"
-          }`}
-        >
-          Book Now <ArrowUpRight />
-        </Link>
+          <Link
+            href={href}
+            className={`flex items-center gap-2 px-8 py-3 rounded transition hover:shadow-md  text-base font-medium ${
+              variant === "fill"
+                ? "bg-[#22B37E] text-white hover:bg-[#22b37ee0]"
+                : "bg-white border border-[#666666] text-[#666666] hover:bg-[#22B37EE0] hover:text-white hover:border-transparent"
+            }`}
+          >
+            Book Now <ArrowUpRight />
+          </Link>
       </CardFooter>
     </Card>
   );
