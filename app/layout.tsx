@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import NavBar from "../components/NavBar";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,11 +42,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${beVietnam.className} h-full antialiased`} suppressHydrationWarning >
+    <html
+      lang="en"
+      className={`${beVietnam.className} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <body className="min-h-full flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NavBar />
           <main>{children}</main>
+          <Footer />  
         </ThemeProvider>
       </body>
     </html>
